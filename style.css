@@ -41,10 +41,7 @@ html {
 body {
   background-color: var(--clr-whte);
 }
-p {
-  line-height: 1.4;
-  max-width: 62ch;
-}
+
 img {
   max-width: 100%;
 }
@@ -78,4 +75,6 @@ p {
     font-family: var(--ff-pri);
     font-weight: 400;
     font-size: var(--fs-s);
+    line-height: 1.4;
+  max-width: 62ch;
 }
