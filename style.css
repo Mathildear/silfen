@@ -1,10 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&family=Roboto:wght@900&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&family=Roboto:wght@900&display=swap");
 
 :root {
   --clr-pri: #7bafd4;
-  --clr-sec: #AED5B2;
-  --clr-ter: #EDFF00;
+  --clr-sec: #aed5b2;
+  --clr-ter: #edff00;
   --clr-blck: #000;
   --clr-whte: #fff;
 
@@ -15,11 +14,10 @@
   --sp-xl: 8rem;
   --sp-xxl: 12rem;
 
-  --ff-pri: 'Manrope', sans-serif;
-  --ff-sec: 'Roboto', sans-serif;
+  --ff-pri: "Manrope", sans-serif;
+  --ff-sec: "Roboto", sans-serif;
 
-
-  --fs-xs: 0.8rem;
+  --fs-xs: 0.75rem;
   --fs-s: 1rem;
   --fs-m: clamp(1.1rem, 1vw + 0.8rem, 1.8rem);
   --fs-l: clamp(1.7rem, 1.8vw + 1rem, 2.6rem);
@@ -40,6 +38,7 @@ html {
 
 body {
   background-color: var(--clr-whte);
+  font-family: var(--ff-pri);
 }
 p {
   line-height: 1.4;
@@ -48,14 +47,17 @@ p {
 img {
   max-width: 100%;
 }
-
+li,
+a {
+  text-decoration: none;
+}
 
 h1 {
   font-family: var(--ff-sec);
   font-size: var(--fs-xl);
   font-weight: normal;
   color: var(--clr-blck);
-  
+
   line-height: 1.1;
 }
 
@@ -75,7 +77,42 @@ h3 {
 }
 
 p {
-    font-family: var(--ff-pri);
-    font-weight: 400;
-    font-size: var(--fs-s);
+  font-family: var(--ff-pri);
+  font-weight: 400;
+  font-size: var(--fs-s);
+}
+
+/* ////////////// NAV BAR ////////// */
+.header-bar {
+  background-color: var(--clr-pri);
+  display: flex;
+  justify-content: space-between;
+  padding-top: var(--sp-xs);
+  padding-bottom: var(--sp-xs);
+  padding-left: var(--sp-m);
+  padding-right: var(--sp-m);
+  font-size: var(--fs-xs);
+  font-family: var(--ff-pri);
+  color: var(--clr-whte);
+}
+.nav-bar {
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+  border: dotted 1px red;
+}
+.nav-bar ul {
+  margin-left: 3px;
+}
+.nav-bar ul a {
+  padding-left: 2rem;
+  color: var(--clr-blck);
+  font-size: 1rem;
+}
+header #logo img {
+  height: 24px;
+  position: absolute;
+  display: inline-block;
+  justify-items: center;
+  left: 50%;
+  right: 50%;
 }
