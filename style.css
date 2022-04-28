@@ -98,21 +98,44 @@ p {
 .nav-bar {
   padding-top: 1.2rem;
   padding-bottom: 1.2rem;
-  border: dotted 1px red;
 }
-.nav-bar ul {
-  margin-left: 3px;
-}
+
 .nav-bar ul a {
   padding-left: 2rem;
   color: var(--clr-blck);
   font-size: 1rem;
 }
 header #logo img {
-  height: 24px;
+  /*  height: 24px;
   position: absolute;
   display: inline-block;
   justify-items: center;
-  left: 50%;
-  right: 50%;
+  left: 45%;
+  right: 45%; */
+
+  margin-left: auto;
+  margin-right: auto;
+  height: 24px;
+  width: auto;
+  left: 0;
+  right: 0;
+}
+
+.nav-icons {
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+}
+
+.nav-icons {
+  padding-right: 2rem;
+}
+
+.nav-icons a {
+  padding-right: 1rem;
+}
+
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
