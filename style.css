@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&family=Roboto:wght@900&display=swap');
+
+
+:root {
+  --clr-pri: #7bafd4;
+  --clr-sec: #AED5B2;
+  --clr-ter: #EDFF00;
+  --clr-blck: #000;
+  --clr-whte: #fff;
+
+  --sp-xs: 0.5rem;
+  --sp-s: 1rem;
+  --sp-m: 2rem;
+  --sp-l: 4rem;
+  --sp-xl: 8rem;
+  --sp-xxl: 12rem;
+
+  --ff-pri: 'Manrope', sans-serif;
+  --ff-sec: 'Roboto', sans-serif;
+
+
+  --fs-xs: 0.8rem;
+  --fs-s: 1rem;
+  --fs-m: clamp(1.1rem, 1vw + 0.8rem, 1.8rem);
+  --fs-l: clamp(1.7rem, 1.8vw + 1rem, 2.6rem);
+  --fs-xl: clamp(2.3rem, 3.54vw + 1rem, 3.2rem);
+}
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+.body {
+  font-family: var(--ff-pri);
+}
+
+body {
+  background-color: var(--clr-whte);
+}
+p {
+  line-height: 1.4;
+  max-width: 62ch;
+}
+img {
+  max-width: 100%;
+}
+
+
+h1 {
+  font-family: var(--ff-sec);
+  font-size: var(--fs-xl);
+  font-weight: normal;
+  color: var(--clr-blck);
+  
+  line-height: 1.1;
+}
+
+h2 {
+  font-family: var(--ff-sec);
+  font-size: var(--fs-l);
+  font-weight: bold;
+  color: var(--clr-blck);
+  line-height: 1.1;
+  max-width: 27ch;
+}
+h3 {
+  font-family: var(--ff-pri);
+  font-size: var(--fs-m);
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+p {
+    font-family: var(--ff-pri);
+    font-weight: 400;
+    font-size: var(--fs-s);
+}
