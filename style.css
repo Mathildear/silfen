@@ -7,8 +7,8 @@
   --clr-ter: #EDFF00;
   --clr-blck: #000;
   --clr-whte: #fff;
-  --clr-sec-opa: rgb(174, 213, 178, 0.25);
-  --clr-ter-opa: rgb(237, 255, 0, 0.25);
+  --clr-sec-opa: #EBF5EC;
+  --clr-ter-opa: #FBFFBF;
 
   --sp-xs: 0.5rem;
   --sp-s: 1rem;
@@ -119,11 +119,10 @@ p {
 
 
 .graph {
-    height: 500px;
-    width: 1200px;
+    margin: auto 15% auto 15%;
     background-color: #EDFF00;
     opacity: 75%;
-    margin: auto;
+    height: 500px;
     margin-top: var(--sp-s);
 }
 
@@ -136,9 +135,12 @@ p {
 .smallflex {
 display: flex;
 flex-direction: column;
-
 width: fit-content;
 margin: auto;
+}
+
+.heading2style {
+margin: 5% 15% auto 15%;
 }
 
 .smallflex h3 {
@@ -155,8 +157,64 @@ margin: auto;
     background-color: var(--clr-ter-opa);
 }
 
+.imgflex {
+    margin-left: 15%;
+    margin-top: 5rem;
+    margin-right: 15%;
+    display: flex;
+    flex-direction: column;
+}
 
+#bag_on_grass {
+    width: 500px;
+}
 
+.text-on-top-blue {
+    background-color: rgb(123, 175, 212);
+    max-width: 600px;
+    padding: var(--sp-m);
+    position: absolute;
+    right: 15%;
+    top: 2400px;
+}
+.text-on-top-blue h3 {
+    margin-top: 0;
+}
 
+#panni {
+    width: 500px;
+    margin-top: var(--sp-xl);
+    margin-left: auto;
+}
 
+.text-on-top-yellow {
+    background-color: #FBFFBF;
+    max-width: 600px;
+    padding: var(--sp-m);
+    position: absolute;
+    left: 15%;
+    top: 3100px;
+}
 
+.text-on-top-yellow h3 {
+    margin-top: 0;
+}
+
+#flying-bag {
+    width: 500px;
+    margin-top: var(--sp-m);
+    
+}
+
+.text-on-top-green {
+    background-color: var(--clr-sec-opa);
+    max-width: 600px;
+    padding: var(--sp-m);
+    position: absolute;
+    right: 15%;
+    top: 3800px;   
+}
+
+.text-on-top-green h3 {
+    margin-top: 0;
+}
