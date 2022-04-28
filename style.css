@@ -2,11 +2,13 @@
 
 
 :root {
-  --clr-pri: #7bafd4;
-  --clr-sec: #AED5B2;
+  --clr-pri:rgb(123, 175, 212, 0.75);
+  --clr-sec: rgb(174, 213, 178, 0.75);
   --clr-ter: #EDFF00;
   --clr-blck: #000;
   --clr-whte: #fff;
+  --clr-sec-opa: rgb(174, 213, 178, 0.25);
+  --clr-ter-opa: rgb(237, 255, 0, 0.25);
 
   --sp-xs: 0.5rem;
   --sp-s: 1rem;
@@ -62,9 +64,26 @@ h2 {
   font-weight: bold;
   color: var(--clr-blck);
   line-height: 1.1;
-  max-width: 27ch;
+  width: fit-content;
+  margin: auto;
+  margin-top: var(--sp-l);
+text-transform: uppercase
 }
+
 h3 {
+    font-family: var(--ff-sec);
+    font-size: var(--fs-m);
+    font-weight: bold;
+    color: var(--clr-blck);
+    line-height: 1.1;
+    width: fit-content;
+
+    margin-top: var(--sp-l);
+  text-transform: uppercase
+  }
+
+
+h4 {
   font-family: var(--ff-pri);
   font-size: var(--fs-m);
   font-weight: 600;
@@ -78,3 +97,66 @@ p {
     line-height: 1.4;
   max-width: 62ch;
 }
+
+
+.bigmargin {
+    margin: auto;
+    width: auto;
+    background-color: var(--clr-sec);
+    padding: var(--sp-xl);
+    height: 600px;
+}
+
+.bigmargin h1 {
+    width: 600px; 
+    font-size: 5rem;   
+}
+
+.bigmargin h2 {
+    margin: 0;
+    margin-top: 2rem;
+}
+
+
+.graph {
+    height: 500px;
+    width: 1200px;
+    background-color: #EDFF00;
+    opacity: 75%;
+    margin: auto;
+    margin-top: var(--sp-s);
+}
+
+.graph p {
+    margin: auto;
+    padding-top: 15%;
+    width: fit-content;
+}
+
+.smallflex {
+display: flex;
+flex-direction: column;
+
+width: fit-content;
+margin: auto;
+}
+
+.smallflex h3 {
+    padding: var(--sp-s);
+    background-color: var(--clr-sec-opa);
+}
+
+.smallflex p {
+   width: auto;
+    margin-top: var(--sp-s);
+}
+
+.smallflex .h32nd {
+    background-color: var(--clr-ter-opa);
+}
+
+
+
+
+
+
