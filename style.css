@@ -294,10 +294,9 @@ header #logo img {
   border: solid 2px rgb(211, 211, 211);
 }
 
-footer {
+.footerflex {
   margin-top: var(--sp-m);
   background-color: var(--clr-pri);
-  height: 30rem;
 }
 
 footer h4,
@@ -313,10 +312,10 @@ footer p {
   max-width: 62ch;
 }
 
-.footerflex {
+.firstflex {
   display: flex;
   gap: var(--sp-xl);
-  padding: 10% 5% 15% 5%;
+  padding: 10% 5% 0 5%;
 }
 
 .width {
@@ -367,4 +366,61 @@ input {
 
 form {
   padding: 1rem 0 3rem;
+}
+
+.secondflex {
+  display: flex;
+  justify-content: space-between;
+  padding: 5% 5% 4% 5%;
+}
+
+.width ul li:hover {
+  cursor: pointer;
+  opacity: 50%;
+}
+
+.terms {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.terms p:hover {
+  cursor: pointer;
+  opacity: 50%;
+}
+
+.cards {
+  display: flex;
+  gap: 5px;
+}
+
+.cards img {
+  height: 15px;
+  cursor: pointer;
+}
+
+.tandc {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.buttomleft {
+  width: fit-content;
+}
+
+.socialmedia {
+  display: flex;
+  gap: 15px;
+}
+
+.socialmedia img {
+  height: 15px;
+}
+
+.socialmedia img:hover {
+  opacity: 50%;
+  cursor: pointer;
 }
