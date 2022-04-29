@@ -219,9 +219,6 @@ margin: 5% 15% auto 15%;
 
 .text-on-top-green h3 {
     margin-top: 0;
-  font-family: var(--ff-pri);
-  font-weight: 400;
-  font-size: var(--fs-s);
 }
 
 /* ////////////// NAV BAR ////////// */
