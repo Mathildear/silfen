@@ -34,10 +34,15 @@
 html {
   scroll-behavior: smooth;
 }
+a {
+  color: #000;
+}
 .body {
   font-family: var(--ff-pri);
 }
-
+.hidden {
+  display: none;
+}
 body {
   background-color: var(--clr-whte);
   font-family: var(--ff-pri);
@@ -219,7 +224,7 @@ p {
   margin-top: 0;
 }
 
-/* ////////////// NAV BAR ////////// */
+/* ////////////// NAV BAR and BURGER MENU  ////////// */
 .header-bar {
   background-color: var(--clr-pri);
   display: flex;
@@ -242,7 +247,7 @@ p {
   color: var(--clr-blck);
   font-size: 1rem;
 }
-header #logo img {
+#logo img {
   margin-left: auto;
   margin-right: auto;
   height: 24px;
@@ -269,6 +274,18 @@ header #logo img {
   justify-content: space-between;
   align-items: center;
 }
+#navLogo img {
+  margin-left: auto;
+  margin-right: auto;
+  height: 24px;
+  width: auto;
+  left: 0;
+  right: 0;
+}
+.burgerListitems li {
+  padding-bottom: 1rem;
+}
+/* //////////////////// */
 
 .materialgrid {
   display: grid;
@@ -367,4 +384,16 @@ input {
 
 form {
   padding: 1rem 0 3rem;
+}
+
+/* ////////// MEDIA QUERIES/////////// */
+
+@media only screen and (max-width: 1100px) {
+  .burgerMenuItems {
+    display: block;
+    position: fixed;
+  }
+  .nav-bar {
+    display: none;
+  }
 }
