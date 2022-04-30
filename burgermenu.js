@@ -22,13 +22,15 @@ if (navBtn.style.display === "block") {
 console.log("burgerClick");
  */
 let menuIcon = document.querySelector(".menuIcon");
-let navLinks = document.querySelector(".burgeMenuItems");
+let navLinks = document.querySelector(".burgerListitems");
+let overlay = document.querySelector(".overlay");
 
 menuIcon.addEventListener("click", menuDrop);
 
 function menuDrop() {
   console.log("menuDrop");
   navLinks.classList.toggle("hidden");
+  overlay.classList.toggle("hidden");
 }
 if (menuIcon.style.display === "block") {
   navLinks.style.display = "block";
