@@ -34,10 +34,21 @@
 html {
   scroll-behavior: smooth;
 }
+a {
+  color: #000;
+}
 .body {
   font-family: var(--ff-pri);
 }
-
+.hidden {
+  display: none;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
 body {
   background-color: var(--clr-whte);
   font-family: var(--ff-pri);
@@ -125,6 +136,7 @@ p {
   opacity: 75%;
   height: 500px;
   margin-top: var(--sp-s);
+  z-index: -10;
 }
 
 .graph p {
@@ -168,6 +180,7 @@ p {
 
 #bag_on_grass {
   width: 500px;
+  z-index: -10;
 }
 
 .text-on-top-blue {
@@ -177,6 +190,7 @@ p {
   position: absolute;
   right: 15%;
   top: 2400px;
+  z-index: -1;
 }
 .text-on-top-blue h3 {
   margin-top: 0;
@@ -186,6 +200,7 @@ p {
   width: 500px;
   margin-top: var(--sp-l);
   margin-left: auto;
+  z-index: -10;
 }
 
 .text-on-top-yellow {
@@ -195,6 +210,7 @@ p {
   position: absolute;
   left: 15%;
   top: 3100px;
+  z-index: -1;
 }
 
 .text-on-top-yellow h3 {
@@ -204,6 +220,7 @@ p {
 #flying-bag {
   width: 500px;
   margin-top: var(--sp-m);
+  z-index: -10;
 }
 
 .text-on-top-green {
@@ -213,13 +230,14 @@ p {
   position: absolute;
   right: 15%;
   top: 3800px;
+  z-index: -1;
 }
 
 .text-on-top-green h3 {
   margin-top: 0;
 }
 
-/* ////////////// NAV BAR ////////// */
+/* ////////////// NAV BAR and BURGER MENU  ////////// */
 .header-bar {
   background-color: var(--clr-pri);
   display: flex;
@@ -242,9 +260,10 @@ p {
   color: var(--clr-blck);
   font-size: 1rem;
 }
-header #logo img {
+#logo img {
   margin-left: auto;
   margin-right: auto;
+  margin-top: 1.2rem;
   height: 24px;
   width: auto;
   left: 0;
@@ -267,8 +286,40 @@ header #logo img {
 .nav-wrapper {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
+  flex-direction: row;
+  margin: 0 auto;
+  background-color: var(--clr-whte);
+  z-index: 100;
 }
+#navLogo img {
+  margin-left: auto;
+  margin-right: auto;
+  height: 24px;
+  width: auto;
+  left: 0;
+  right: 0;
+}
+.burgerListitems li {
+  padding-bottom: 1rem;
+}
+.burgerListitems {
+  padding-top: 1.6rem;
+}
+.burgerMenuItems {
+  z-index: 10;
+}
+.overlay {
+  height: 100vh;
+  width: 100vw;
+  background-color: white;
+  opacity: 100%;
+  position: fixed;
+  z-index: -1;
+  overflow: hidden;
+}
+
+/* //////////////////// */
 
 .materialgrid {
   display: grid;
@@ -423,4 +474,27 @@ form {
 .socialmedia img:hover {
   opacity: 50%;
   cursor: pointer;
+}
+/* ////////// MEDIA QUERIES/////////// */
+
+@media only screen and (max-width: 899px) {
+  .burgerMenuItems {
+    display: block;
+  }
+  .burgerMenuNav {
+    display: block;
+  }
+  .burgerMenu {
+    /* padding-left: 2rem;
+    padding-top: 1rem; */
+    margin-top: 1rem;
+    margin-left: 2rem;
+  }
+  .display-icon {
+    display: none;
+  }
+
+  .nav-bar {
+    display: none;
+  }
 }

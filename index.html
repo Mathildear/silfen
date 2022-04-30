@@ -13,6 +13,7 @@
         <span class="header-span">Free shipping in Denmark</span
         ><span class="header-span">Shipping to: Denmark(DKK)</span>
       </div>
+
       <div class="nav-wrapper">
         <div class="nav-bar">
           <ul>
@@ -22,6 +23,59 @@
             </li>
           </ul>
         </div>
+
+        <div class="burgerMenu">
+          <div class="burgerMenuItems hidden">
+            <div class="burgerMenuNav">
+              <div class="menuIcon">
+                <img
+                  class="menuIcon"
+                  src="/images/menu.svg"
+                  alt="close navigation icon"
+                />
+              </div>
+              <!--  <div id="navLogo">
+                <img src="/images/silfenlogo.png" alt="silfen logo" />
+              </div> -->
+              <!--  <div class="burgerNavIcons">
+                <ul>
+                  <li>
+                    <img src="/images/search.svg" alt="search" />
+                  </li>
+                  <li>
+                    <img src="/images/shopping_basket.svg" alt="shopping cart" />
+                  </li>
+                </ul>
+              </div> -->
+            </div>
+            <div class="burgerListitems hidden">
+              <li>
+                <a href="#">Register / Login</a>
+              </li>
+              <li>
+                <a href="#">Wishlist</a>
+              </li>
+              <li>
+                <a href="#">New In</a>
+              </li>
+              <li>
+                <a href="#">Shop</a>
+              </li>
+              <li>
+                <a href="#">About</a>
+              </li>
+              <li>
+                <a href="#">Silfen Play</a>
+              </li>
+              <li>
+                <a href="#">SS22</a>
+              </li>
+              <li>
+                <a href="#">Sustainability</a>
+              </li>
+            </div>
+          </div>
+        </div>
         <div id="logo">
           <a href="#">
             <img src="/images/silfenlogo.png" alt="silfen logo black" />
@@ -29,9 +83,13 @@
         </div>
         <div class="nav-icons">
           <li>
-            <a href="#"> <img src="/images/person.svg" alt="profile icon" /> </a
+            <a
+              class="display-icon"
+              href="https://silfenstudio.com/my-account-2/"
+            >
+              <img src="/images/person.svg" alt="profile icon" /> </a
             ><a href="#"><img src="/images/search.svg" alt="search icon" /></a
-            ><a href="#"
+            ><a class="display-icon" href="https://silfenstudio.com/wishlist/"
               ><img src="/images/favorite.svg" alt="favorite icon" /></a
             ><a href="#"
               ><img src="/images/shopping_basket.svg" alt="basket icon"
@@ -41,55 +99,7 @@
       </div>
     </header>
     <main>
-      <div class="burgerMenu">
-        <div class="burgerMenuItems hidden">
-          <div class="burgerMenuNav">
-            <div class="closeIcon">
-              <img src="" alt="close navigation icon" />
-            </div>
-            <div class="silfenLogo">
-              <img src="" alt="silfen logo" />
-            </div>
-            <div class="burgerNavIcons">
-              <ul>
-                <li>
-                  <img src="" alt="search" />
-                </li>
-                <li>
-                  <img src="" alt="shopping cart" />
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="burgerListitems">
-            <li>
-              <a href="#">Register / Login</a>
-            </li>
-            <li>
-              <a href="#">Wishlist</a>
-            </li>
-            <li>
-              <a href="#">New In</a>
-            </li>
-            <li>
-              <a href="#">Shop</a>
-            </li>
-            <li>
-              <a href="#">About</a>
-            </li>
-            <li>
-              <a href="#">Silfen Play</a>
-            </li>
-            <li>
-              <a href="#">SS22</a>
-            </li>
-            <li>
-              <a href="#">Sustainability</a>
-            </li>
-          </div>
-        </div>
-      </div>
-
+      <div class="overlay hidden"></div>
       <div class="bigmargin">
         <div>
           <h1>WE ARE NOT SUSTAINABLE</h1>
@@ -353,5 +363,6 @@
         </div>
       </div>
     </footer>
+    <script src="burgermenu.js"></script>
   </body>
 </html>
