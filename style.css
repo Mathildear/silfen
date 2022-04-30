@@ -131,9 +131,10 @@ p {
 }
 
 #graph_line {
-  position: absolute;
+    position: absolute;
+    height: 100%;
     margin: auto;
-    max-width: fit-content;
+    max-width: max-content;
     left: 0px;
 }
 
