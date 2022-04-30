@@ -102,7 +102,9 @@ p {
 .bigmargin {
     margin: auto;
     width: auto;
-    background-color: var(--clr-sec);
+    background-image: url(/img/header_img.png);
+    background-size: contain;
+    background-repeat: no-repeat;
     padding: var(--sp-xl);
     height: 600px;
 }
@@ -128,11 +130,7 @@ p {
     margin-top: var(--sp-s);
     overflow-x: scroll;
     overflow-y: hidden;
-}
-
-::-webkit-scrollbar {
-  display: none;
-}
+  }
 
 #graph_line {
     position: absolute;
