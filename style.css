@@ -117,19 +117,24 @@ p {
     margin-top: 2rem;
 }
 
-
 .graph {
+    position: relative;
     margin: auto 15% auto 15%;
-    background-color: #EDFF00;
-    opacity: 75%;
-    height: 500px;
+    background-image: url(/img/background.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    height: 502px;
     margin-top: var(--sp-s);
+    overflow-x: scroll;
+    overflow-y: hidden;
 }
 
-.graph p {
+#graph_line {
+  position: absolute;
     margin: auto;
-    padding-top: 15%;
-    width: fit-content;
+    max-width: fit-content;
+    left: 0px;
 }
 
 .smallflex {
