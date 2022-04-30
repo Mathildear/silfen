@@ -130,6 +130,10 @@ p {
     overflow-y: hidden;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 #graph_line {
     position: absolute;
     height: 100%;
