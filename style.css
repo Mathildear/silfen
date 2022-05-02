@@ -117,14 +117,13 @@ p {
 }
 
 .bigmargin {
-
-    margin: auto;
-    width: auto;
-    background-image: url(/img/header_img.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    padding: var(--sp-xl);
-    height: 600px;
+  margin: auto;
+  width: auto;
+  background-image: url(/img/header_img.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: var(--sp-xl);
+  height: 600px;
 }
 
 /* .bigmargin h1 {
@@ -137,19 +136,18 @@ p {
 }
 
 .graph {
-
-    position: relative;
-    margin: auto 15% auto 15%;
-    background-image: url(/img/background.png);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: 50%;
-    height: 502px;
-    margin-top: var(--sp-s);
-    overflow-x: scroll;
-    overflow-y: hidden;
+  position: relative;
+  margin: auto 15% auto 15%;
+  background-image: url(/img/background.png);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 50%;
+  height: 502px;
+  margin-top: var(--sp-s);
+  overflow-x: scroll;
+  overflow-y: hidden;
   z-index: -10;
-  }
+}
 
 .graph p {
   margin: auto;
@@ -295,13 +293,6 @@ p {
   font-size: 1rem;
 }
 #logo img {
-  /*  margin-left: auto;
-  margin-right: auto;
-  margin-top: 1.2rem;
-  height: 24px;
-  width: auto;
-  left: 0;
-  right: 0; */
   height: 24px;
   width: 10.219rem;
   margin-left: auto;
@@ -335,6 +326,7 @@ p {
   margin: 0 auto;
   background-color: var(--clr-whte);
   z-index: 100;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.11);
 }
 #navLogo img {
   margin-left: auto;
@@ -544,20 +536,6 @@ form {
   transform: scale(1.05);
   opacity: 70%;
 }
-
-/* .buttonview {
-  position: absolute;
-  bottom: 5%;
-  left: 50%;
-  background-color: var(--clr-whte);
-  padding: 1rem;
-  border: 1px solid rgba(0, 0, 0, 0.11);
-}
-
-.buttonview p {
-  margin: auto;
-  width: 100%;
-} */
 
 .productlistmain .bagInfo .price {
   font-family: var(--ff-pri);
