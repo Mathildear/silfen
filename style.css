@@ -113,11 +113,14 @@ p {
 }
 
 .bigmargin {
-  margin: auto;
-  width: auto;
-  background-color: var(--clr-sec);
-  padding: var(--sp-xl);
-  height: 600px;
+
+    margin: auto;
+    width: auto;
+    background-image: url(/img/header_img.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: var(--sp-xl);
+    height: 600px;
 }
 
 .bigmargin h1 {
@@ -131,13 +134,19 @@ p {
 }
 
 .graph {
-  margin: auto 15% auto 15%;
-  background-color: #edff00;
-  opacity: 75%;
-  height: 500px;
-  margin-top: var(--sp-s);
+
+    position: relative;
+    margin: auto 15% auto 15%;
+    background-image: url(/img/background.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    height: 502px;
+    margin-top: var(--sp-s);
+    overflow-x: scroll;
+    overflow-y: hidden;
   z-index: -10;
-}
+  }
 
 .graph p {
   margin: auto;
