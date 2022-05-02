@@ -475,6 +475,124 @@ form {
   opacity: 50%;
   cursor: pointer;
 }
+
+/* ///////// PRODUCT LIST STYLE ////////// */
+
+.productlistmain {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 3rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  margin-top: 8rem;
+}
+
+.productlistmain .bagInfo .bagName {
+  font-family: var(--ff-pri);
+  font-weight: 600;
+  font-size: var(--fs-s);
+  margin-top: var(--sp-s);
+}
+
+.productlistmain .bags:hover {
+  position: relative;
+  cursor: pointer;
+  opacity: 100%;
+}
+
+.buttonview {
+  position: absolute;
+  bottom: 5%;
+  left: 25%;
+  background-color: var(--clr-whte);
+  padding: 1rem;
+}
+
+.buttonview p {
+  margin: auto;
+  width: 100%;
+}
+
+.productlistmain .bagInfo .price {
+  font-family: var(--ff-pri);
+  font-weight: 100;
+  font-size: var(--fs-xs);
+  margin-top: 0.5rem;
+}
+
+/* /////// THIS IS PRODUCT VIEW ///////// */
+
+#productView {
+  display: grid;
+  grid-template-columns: 60% 1fr;
+  gap: 3rem;
+  margin-left: 3rem;
+  margin-right: 15rem;
+  margin-top: 8rem;
+}
+
+#productView article img {
+  width: 100%;
+}
+#productView section.bagInfo {
+  margin-top: 6rem;
+}
+
+#productView section.bagInfo h1 {
+  font-family: var(--ff-pri);
+  font-size: var(--fs-m);
+}
+
+#productView section.bagInfo .bagPrice {
+  margin-top: 1rem;
+}
+#productView section.bagInfo .description {
+  margin-top: 1rem;
+  color: #7d7d7d;
+  margin-bottom: 5rem;
+}
+
+#productView section.bagInfo .bagColor {
+  margin-bottom: 3rem;
+}
+
+#productView section.bagInfo .quantity input {
+  border: 1px solid rgba(0, 0, 0, 0.11);
+  border-radius: 0;
+  width: 20%;
+  line-height: 2rem;
+}
+
+#productView section.bagInfo .quantity button {
+  color: var(--clr-whte);
+  background-color: black;
+  border: none;
+  line-height: 2rem;
+  padding: 0.3rem;
+  width: 75%;
+  margin-left: 3%;
+  cursor: pointer;
+}
+
+.toggleItem {
+  border-top: solid 1px rgba(0, 0, 0, 0.11);
+  margin-top: 3rem;
+}
+
+.toggleItem h5 {
+  line-height: 3rem;
+}
+
+.toggleInner p {
+  margin-top: 1rem;
+  color: #7d7d7d;
+}
+
+.toggleInner p.dandr {
+  border-bottom: solid 1px rgba(0, 0, 0, 0.11);
+  padding-bottom: 1rem;
+}
+
 /* ////////// MEDIA QUERIES/////////// */
 
 @media only screen and (max-width: 899px) {

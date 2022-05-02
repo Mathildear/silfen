@@ -35,8 +35,6 @@ function showBag(bagArray) {
       .querySelector("a")
       .setAttribute("href", `productview.html?id=${bag.id}`);
     copy.querySelector(".price span").textContent = bag.price;
-    // copy.querySelector(".bagImg").src =
-    //   bag._embedded["wp:featuredmedia"][0].media_details.sizes.large.source_url;
     copy.querySelector(".bagImg").src = bag.img.guid;
     parentElement.appendChild(copy);
   });
@@ -44,8 +42,18 @@ function showBag(bagArray) {
 
 //For the showSingleBag//
 
-// function showSingleBag(singlebag) {
-//   console.log(singlebag);
-//   document.querySelector(".bagName").textContent = singlebag.bag_name;
-//   document.querySelector(".bagPrice span").textContent = singlebag.price;
-// }
+function showSingleBag(singlebag) {
+  console.log(singlebag);
+  document.querySelector(".bagName").textContent = singlebag.bag_name;
+  document.querySelector(".bagPrice span").textContent = singlebag.price;
+  document.querySelector(".description").textContent = singlebag.description;
+  document.querySelector(".bagColor").textContent = singlebag.color;
+  document.querySelector(".toggleInner .bagMaterial span").textContent =
+    singlebag.materials;
+  document.querySelector(".toggleInner .bagDimensions span").textContent =
+    singlebag.dimensions;
+  document.querySelector(".toggleInner .bagStrap span").textContent =
+    singlebag.strap_length;
+  document.querySelector(".bagImg").src = singlebag.img.guid;
+  document.querySelector(".bagImg").alt = singlebag.bag_name;
+}
