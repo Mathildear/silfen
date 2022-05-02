@@ -498,6 +498,7 @@ form {
   position: relative;
   cursor: pointer;
   transform: scale(1.05);
+  opacity: 70%;
 }
 
 /* .buttonview {
