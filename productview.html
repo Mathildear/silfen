@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product veiw</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="sticky">
+      <div class="header-bar">
+        <span class="header-span">Free shipping in Denmark</span
+        ><span class="header-span">Shipping to: Denmark(DKK)</span>
+      </div>
+
+      <div class="nav-wrapper">
+        <div class="nav-bar">
+          <ul>
+            <li>
+              <a href="">New In</a><a href="">Shop</a><a href="">About</a
+              ><a href="">Silfen Play</a><a href="">SS22</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="burgerMenu">
+          <div class="burgerMenuItems hidden">
+            <div class="burgerMenuNav">
+              <div class="menuIcon">
+                <img
+                  class="menuIcon"
+                  src="/images/menu.svg"
+                  alt="close navigation icon"
+                />
+              </div>
+              <!--  <div id="navLogo">
+                  <img src="/images/silfenlogo.png" alt="silfen logo" />
+                </div> -->
+              <!--  <div class="burgerNavIcons">
+                  <ul>
+                    <li>
+                      <img src="/images/search.svg" alt="search" />
+                    </li>
+                    <li>
+                      <img src="/images/shopping_basket.svg" alt="shopping cart" />
+                    </li>
+                  </ul>
+                </div> -->
+            </div>
+            <div class="burgerListitems hidden">
+              <li>
+                <a href="#">Register / Login</a>
+              </li>
+              <li>
+                <a href="#">Wishlist</a>
+              </li>
+              <li>
+                <a href="#">New In</a>
+              </li>
+              <li>
+                <a href="#">Shop</a>
+              </li>
+              <li>
+                <a href="#">About</a>
+              </li>
+              <li>
+                <a href="#">Silfen Play</a>
+              </li>
+              <li>
+                <a href="#">SS22</a>
+              </li>
+              <li>
+                <a href="#">Sustainability</a>
+              </li>
+            </div>
+          </div>
+        </div>
+        <div id="logo">
+          <a href="#">
+            <img src="/images/silfenlogo.png" alt="silfen logo black" />
+          </a>
+        </div>
+        <div class="nav-icons">
+          <li>
+            <a
+              class="display-icon"
+              href="https://silfenstudio.com/my-account-2/"
+            >
+              <img src="/images/person.svg" alt="profile icon" /> </a
+            ><a href="#"><img src="/images/search.svg" alt="search icon" /></a
+            ><a class="display-icon" href="https://silfenstudio.com/wishlist/"
+              ><img src="/images/favorite.svg" alt="favorite icon" /></a
+            ><a href="#"
+              ><img src="/images/shopping_basket.svg" alt="basket icon"
+            /></a>
+          </li>
+        </div>
+      </div>
+    </header>
+    <main class="productviewMain">
+      <div id="productView">
+        <article>
+          <img class="bagImg" src="img/orangebag.png" alt="Silfen bag" />
+        </article>
+        <section class="bagInfo">
+          <h1 class="bagName">Shoulder Bag ULLA</h1>
+          <p class="bagPrice">DKK <span>499</span>,00</p>
+          <p class="description">
+            The ULLA bag is a signature style by SILFEN. Made in recycled nylon
+            with silver metal hardware. The 90’s shape beautifully combines an
+            everyday bag with a party look. The single handle is adjustable and
+            make the bag perfect for shoulder bag use. ULLA comes with matching
+            lining and an internal pocket. A must have bag! The recycled nylon
+            is primarily made of plastic bottles collected from the oceans all
+            over the world. With this bag you can both look your best and keep
+            our planet safe a little more.
+          </p>
+          <h5 class="color">Color</h5>
+          <p class="bagColor">Orange</p>
+          <div class="quantity">
+            <input
+              type="number"
+              step="1"
+              min="1"
+              max=""
+              name="quantity"
+              value="1"
+              title="Qty"
+              class="input-text qty text"
+              size="4"
+              pattern="[0-9]*"
+              inputmode="numeric"
+            />
+            <button type="submit" class="addToCartB">Add to Cart</button>
+          </div>
+          <div class="toggleItem">
+            <div class="toggleHeading">
+              <h5>Descripstion</h5>
+              <div class="plusSign"></div>
+            </div>
+          </div>
+          <div class="toggleInner">
+            <p class="bagMaterial">Material: <span>100% Polyurethane</span></p>
+            <p class="bagDimensions">Dimensions: <span>24*40*7,5 cm</span></p>
+            <p class="bagStrap">Strap length: <span>50 cm</span></p>
+          </div>
+          <div class="toggleItem">
+            <div class="toggleHeading">
+              <h5>Delivery & Returns</h5>
+              <div class="plusSign"></div>
+            </div>
+          </div>
+          <div class="toggleInner">
+            <p class="dandr">
+              Delivery inside of Denmark takes 1-3 business days. Delivery
+              outside of Denmark takes 3-9 business days. The shipping time is
+              the estimated time from when the package leaves our warehouse in
+              Denmark until it reaches its destination. On all orders we offer a
+              fair shipping fee depending on shipping distance. <br /><br />
+              If for any reason you are not satisfied with the items purchased,
+              you can return your purchase within 21 days for a full refund. The
+              return period is counted from the day you receive your goods.
+              Click here to read more about, how to return your purchase.
+            </p>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <div class="footerflex">
+        <div class="firstflex">
+          <div>
+            <h4>COME JOIN US, SUBSCRIBE HERE!</h4>
+            <p>
+              We’ve been waiting for you! Be the first to know about new
+              arrivals, promotional offers and much more.
+            </p>
+            <form action="index.html" name="email">
+              <span>
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Email address"
+                  class="email"
+                />
+                <input type="submit" value="Sign Up" class="signup" />
+              </span>
+            </form>
+          </div>
+          <div class="width">
+            <h4>Silfen studio</h4>
+            <p>
+              Klareboderne 10, 1. <br />1115 Copenhagen K <br />Denmark
+              <br /><br />
+              Phone: +45 20518923<br />
+              VAT: DK40912320
+            </p>
+          </div>
+          <div class="width">
+            <h4>SILFEN WAREHOUSE</h4>
+            <p>
+              Adax A/S, Att: Silfen Studio <br />
+              Vestre Hedevej 18 <br />DK-4000 Roskilde <br />Denmark
+            </p>
+          </div>
+          <div class="width">
+            <h4>Help</h4>
+            <ul>
+              <li>About</li>
+              <li>Sustainability</li>
+              <li>Order Tracking</li>
+              <li>Currency</li>
+              <li>Contact</li>
+              <li>Delivery & returns</li>
+              <li>Return items</li>
+            </ul>
+          </div>
+        </div>
+        <div class="secondflex">
+          <div class="buttomleft">
+            <h4>&copy; 2021. SILFEN STUDIO. ALL RIGHTS RESERVED</h4>
+            <div class="tandc">
+              <div class="terms">
+                <p>Terms & Conditions</p>
+                <p>Privacy & Cookie Policy</p>
+              </div>
+              <div class="cards">
+                <img
+                  src="https://silfenstudio.com/wp-content/uploads/2021/10/visa.svg"
+                  alt="visa"
+                />
+                <img
+                  src="https://silfenstudio.com/wp-content/uploads/2021/10/mastercard.svg"
+                  alt="mastercard"
+                />
+                <img
+                  src="https://silfenstudio.com/wp-content/uploads/2021/10/amex.svg"
+                  alt="amex"
+                />
+                <img
+                  src="https://silfenstudio.com/wp-content/uploads/2021/10/jcb.svg"
+                  alt="jcb"
+                />
+                <img
+                  src="https://silfenstudio.com/wp-content/uploads/2021/10/dankort.svg"
+                  alt="dankort"
+                />
+                <img
+                  src="https://silfenstudio.com/wp-content/uploads/2021/10/mobilepay.svg"
+                  alt="mobilepay"
+                />
+              </div>
+            </div>
+          </div>
+          <div>
+            <h4>Connect</h4>
+            <div class="socialmedia">
+              <img
+                class="smfacebook"
+                src="img/fontisto_facebook.svg"
+                alt="facebook"
+              />
+              <img
+                class="sminstagram"
+                src="img/bi_instagram.svg"
+                alt="instagram"
+              />
+              <img class="smyoutube" src="img/fa_youtube.svg" alt="youtube" />
+              <img class="smemail" src="img/fa_at.svg" alt="at" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="burgermenu.js"></script>
+    <script src="data.js"></script>
+  </body>
+</html>
