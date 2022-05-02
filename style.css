@@ -494,24 +494,25 @@ form {
   margin-top: var(--sp-s);
 }
 
-.productlistmain .bags:hover {
+.productlistmain .bagarticle:hover {
   position: relative;
   cursor: pointer;
-  opacity: 100%;
+  transform: scale(1.05);
 }
 
-.buttonview {
+/* .buttonview {
   position: absolute;
   bottom: 5%;
-  left: 25%;
+  left: 50%;
   background-color: var(--clr-whte);
   padding: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.11);
 }
 
 .buttonview p {
   margin: auto;
   width: 100%;
-}
+} */
 
 .productlistmain .bagInfo .price {
   font-family: var(--ff-pri);
