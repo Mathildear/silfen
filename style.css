@@ -151,6 +151,10 @@ p {
   margin-top: var(--sp-s);
   overflow-x: scroll;
   overflow-y: hidden;
+  filter: saturate(3000%);
+}
+.scrollleft {
+  margin-left: 15%;
 }
 
 #graph_line {
@@ -300,6 +304,9 @@ p {
 
 .nav-icons a {
   padding-right: 1rem;
+}
+.nav-icons ul li a:hover {
+  opacity: 60%;
 }
 
 .nav-wrapper {
